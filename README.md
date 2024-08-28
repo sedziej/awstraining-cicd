@@ -188,7 +188,7 @@ var.common_tags             -> {"app:hub"="emea", "app:env"="test", "app:name"="
 var.environment             -> emea
 var.profile                 -> backend-test
 var.region                  -> eu-central-1
-var.remote_state_bucket     -> tf-state-backend-test-eu-central-1-<<UNIQUE_BUCKET_STRING>>
+var.remote_state_bucket     -> tf-state-backend-test-eu-central-1-53d21ej
 var.shared_credentials_file -> C:\\Users\\<<USERNAME>>\\.aws\\credentials
 ```
 Or use one-liner:
@@ -198,7 +198,7 @@ terraform apply \
   -var='environment=emea' \
   -var='profile=backend-test' \
   -var='region=eu-central-1' \
-  -var='remote_state_bucket=tf-state-backend-test-eu-central-1-<<UNIQUE_BUCKET_STRING>>' \
+  -var='remote_state_bucket=tf-state-backend-test-eu-central-1-53d21ej' \
   -var='shared_credentials_file=C:\\Users\\<<USERNAME>>\\.aws\\credentials'
 ```
 Set ```<<USERNAME>>``` to your CORP ID.
