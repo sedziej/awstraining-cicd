@@ -16,6 +16,6 @@ jobs:
   print_name:
     runs-on: ubuntu-latest
     steps:
-      - name: Prints the name and last name to the screen
-        run: |
-          echo "Name: ${{inputs.name}}"
+    - name: Prints the name and last name to the screen
+      run: |
+        echo "Name: ${{inputs.name}}"
