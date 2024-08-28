@@ -28,8 +28,8 @@ jobs:
     needs: properties
     env:
       AWS_ACCOUNT: ${{ needs.properties.outputs.AWS_ACCOUNT }}
-      AWS_KEY:  ${{ secrets.BACKEND_EMEA_TEST_AWS_KEY }}
-      AWS_SECRET: ${{ secrets.BACKEND_EMEA_TEST_AWS_SECRET }}
+      AWS_KEY:  ${{ secrets.AWS_KEY }}
+      AWS_SECRET: ${{ secrets.AWS_SECRET }}
       REGION: ${{ needs.properties.outputs.REGION }}
       CLUSTER_NAME: ${{ needs.properties.outputs.CLUSTER_NAME }}
       SERVICE_NAME: ${{ needs.properties.outputs.SERVICE_NAME }}
